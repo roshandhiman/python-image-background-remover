@@ -1,5 +1,5 @@
-from rembg import remove
+from rembg import remove as r
 from PIL import Image as i
-input=i.open("images.jpeg")
-output=remove(input)
+ig=i.open("images.jpeg")
+output=r(ig)
 output.save("output.png")
